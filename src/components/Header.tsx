@@ -17,27 +17,26 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex space-x-8">
-          <Link href="/#about" className="text-gray-700 hover:text-gray-900 transition duration-300" style={{ ':hover': { color: '#2d7d2d' } }}>
+          <Link href="/#about" className="text-gray-700 hover:text-[#2d7d2d] transition duration-300">
             About
           </Link>
-          <Link href="/#amenities" className="text-gray-700 hover:text-gray-900 transition duration-300" style={{ ':hover': { color: '#2d7d2d' } }}>
+          <Link href="/#amenities" className="text-gray-700 hover:text-[#2d7d2d] transition duration-300">
             Amenities
           </Link>
-          <Link href="/#floor-plans" className="text-gray-700 hover:text-gray-900 transition duration-300" style={{ ':hover': { color: '#2d7d2d' } }}>
+          <Link href="/#floor-plans" className="text-gray-700 hover:text-[#2d7d2d] transition duration-300">
             Floor Plans
           </Link>
-          <Link href="/#location" className="text-gray-700 hover:text-gray-900 transition duration-300" style={{ ':hover': { color: '#2d7d2d' } }}>
+          <Link href="/#location" className="text-gray-700 hover:text-[#2d7d2d] transition duration-300">
             Location
           </Link>
-          <Link href="/#gallery" className="text-gray-700 hover:text-gray-900 transition duration-300" style={{ ':hover': { color: '#2d7d2d' } }}>
+          <Link href="/#gallery" className="text-gray-700 hover:text-[#2d7d2d] transition duration-300">
             Gallery
           </Link>
         </nav>
         
         <Link 
           href="/#contact" 
-          className="hidden md:inline-block text-white py-2 px-6 rounded-full transition duration-300"
-          style={{ backgroundColor: '#2d7d2d' }}
+          className="hidden md:inline-block text-white py-2 px-6 rounded-full bg-[#2d7d2d] hover:bg-opacity-90 transition duration-300"
         >
           Contact Us
         </Link>

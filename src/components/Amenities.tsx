@@ -1,7 +1,12 @@
 import Image from 'next/image';
 
+// Define a type for the amenity icons mapping
+type AmenityIconsType = {
+  [key: string]: string;
+};
+
 // Map amenity names to Material Icons
-const amenityIcons = {
+const amenityIcons: AmenityIconsType = {
   'Swimming Pool': 'pool',
   'Tennis Court': 'sports_tennis',
   'Basketball Court': 'sports_basketball',
@@ -29,7 +34,18 @@ const amenityIcons = {
   'Adventure Zone': 'attractions'
 };
 
-const amenitiesList = [
+// Define types for amenities data structure
+type AmenityItem = {
+  name: string;
+  icon: string;
+};
+
+type AmenityCategory = {
+  category: string;
+  items: AmenityItem[];
+};
+
+const amenitiesList: AmenityCategory[] = [
   {
     category: 'Sports & Recreation',
     items: [
@@ -86,7 +102,7 @@ export default function Amenities() {
           <p className="text-gray-600 max-w-2xl mx-auto">
             Experience a lifestyle beyond compare with our extensive range of world-class amenities
           </p>
-          <div className="w-20 h-1 mx-auto mt-4" style={{ backgroundColor: '#2d7d2d' }}></div>
+          <div className="w-20 h-1 mx-auto mt-4 bg-[#2d7d2d]"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -106,11 +122,11 @@ export default function Amenities() {
             {amenitiesList.map((category, index) => (
               <div key={index}>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{category.category}</h3>
-                <div className="w-12 h-1 mb-6" style={{ backgroundColor: '#b9e1b9' }}></div>
+                <div className="w-12 h-1 mb-6 bg-[#b9e1b9]"></div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {category.items.map((item, itemIndex) => (
                     <div key={itemIndex} className="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-3">
-                      <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center" style={{ color: '#2d7d2d' }}>
+                      <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center text-[#2d7d2d]">
                         <span className="material-icons">
                           {amenityIcons[item.name] || 'star'}
                         </span>

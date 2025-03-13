@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
         <div className="max-w-3xl text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            <span style={{ color: '#e9d48c' }}>Adani</span>
+            <span className="text-[#e9d48c]">Adani</span>
             <br />
             <span>Luxury Residences in Thane</span>
           </h1>
@@ -30,14 +30,13 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <Link 
               href="/#floor-plans" 
-              className="py-3 px-8 rounded-full font-medium transition duration-300 text-white"
-              style={{ backgroundColor: '#2d7d2d', hover: { backgroundColor: '#256525' } }}
+              className="py-3 px-8 rounded-full font-medium transition duration-300 text-white bg-[#2d7d2d] hover:bg-opacity-80"
             >
               View Floor Plans
             </Link>
             <Link 
               href="/#contact" 
-              className="bg-transparent hover:bg-white hover:text-primary-600 text-white py-3 px-8 rounded-full font-medium border-2 border-white transition duration-300"
+              className="bg-transparent hover:bg-white hover:text-[#2d7d2d] text-white py-3 px-8 rounded-full font-medium border-2 border-white transition duration-300"
             >
               Book Site Visit
             </Link>
@@ -49,19 +48,19 @@ export default function Hero() {
           <div className="container mx-auto px-4">
             <div className="bg-white bg-opacity-90 rounded-lg p-6 grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <p className="font-bold text-3xl" style={{ color: '#2d7d2d' }}>18</p>
+                <p className="font-bold text-3xl text-[#2d7d2d]">18</p>
                 <p className="text-gray-700">Acres Land Parcel</p>
               </div>
               <div className="text-center">
-                <p className="font-bold text-3xl" style={{ color: '#2d7d2d' }}>6</p>
+                <p className="font-bold text-3xl text-[#2d7d2d]">6</p>
                 <p className="text-gray-700">Luxury Towers</p>
               </div>
               <div className="text-center">
-                <p className="font-bold text-3xl" style={{ color: '#2d7d2d' }}>40+</p>
+                <p className="font-bold text-3xl text-[#2d7d2d]">40+</p>
                 <p className="text-gray-700">Habitable Floors</p>
               </div>
               <div className="text-center">
-                <p className="font-bold text-3xl" style={{ color: '#2d7d2d' }}>50+</p>
+                <p className="font-bold text-3xl text-[#2d7d2d]">50+</p>
                 <p className="text-gray-700">Grand Amenities</p>
               </div>
             </div>
