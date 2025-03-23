@@ -135,49 +135,45 @@ export default function Location() {
             </div>
             
             <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Key Distances</h3>
-            <div className="flex flex-row  justify-center gap-8 mt-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6">
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
-                  <span className="material-icons text-xl text-[#2d7d2d]">train</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
+                  <span className="material-icons text-lg sm:text-xl text-[#2d7d2d]">train</span>
                 </div>
-                <h4 className="font-semibold text-gray-800">Thane Railway Station</h4>
-                <p className="text-gray-600">2.5 km</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Thane Railway Station</h4>
+                <p className="text-gray-600 text-sm">2.5 km</p>
               </div>
 
-              
-              
-              
-
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
-                  <span className="material-icons text-xl text-[#2d7d2d]">directions_bus</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
+                  <span className="material-icons text-lg sm:text-xl text-[#2d7d2d]">directions_bus</span>
                 </div>
-                <h4 className="font-semibold text-gray-800">Teen Hath Naka Bus Stop</h4>
-                <p className="text-gray-600">0.2 km</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Teen Hath Naka Bus Stop</h4>
+                <p className="text-gray-600 text-sm">0.2 km</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
-                  <span className="material-icons text-xl text-[#2d7d2d]">flight</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
+                  <span className="material-icons text-lg sm:text-xl text-[#2d7d2d]">flight</span>
                 </div>
-                <h4 className="font-semibold text-gray-800">Mumbai International Airport</h4>
-                <p className="text-gray-600">22 km</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Mumbai International Airport</h4>
+                <p className="text-gray-600 text-sm">22 km</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
-                  <span className="material-icons text-xl text-[#2d7d2d]">shopping_cart</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
+                  <span className="material-icons text-lg sm:text-xl text-[#2d7d2d]">shopping_cart</span>
                 </div>
-                <h4 className="font-semibold text-gray-800">Viviana Mall</h4>
-                <p className="text-gray-600">1.8 km</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Viviana Mall</h4>
+                <p className="text-gray-600 text-sm">1.8 km</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
-                  <span className="material-icons text-xl text-[#2d7d2d]">local_hospital</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-2 bg-[#dcf0dc]">
+                  <span className="material-icons text-lg sm:text-xl text-[#2d7d2d]">local_hospital</span>
                 </div>
-                <h4 className="font-semibold text-gray-800">Jupiter Hospital</h4>
-                <p className="text-gray-600">3.5 km</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Jupiter Hospital</h4>
+                <p className="text-gray-600 text-sm">3.5 km</p>
               </div>
             </div>
           </div>
